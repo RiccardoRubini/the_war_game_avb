@@ -32,7 +32,7 @@ def initialize_state():
     if 'imprevisti_df' not in st.session_state:
         st.session_state.imprevisti_df = None
 
-@st.cache_data(ttl=600) # Cache per 10 minuti per evitare di scaricare troppo spesso
+@st.cache_data(ttl=60*60*2) # Cache per 2 ore per evitare di scaricare troppo spesso
 def load_data_from_gdrive(url: str) -> pd.DataFrame | None:
     """
     Carica un file Excel da un link condivisibile di Google Drive.
