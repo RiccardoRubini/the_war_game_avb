@@ -15,9 +15,9 @@ def initialize_state():
     
     # Crea il DataFrame di default per una squadra
     default_data = {
-        "Fattore": ["👤 Popolazione", "🥫 Cibo", "💰 Finanze","🚑 Ospedali","🎒 Scuole","🔋 Centrali Elettriche","⛪ Luoghi di Culto","🫂 Solidarietà"],
-        "Valore": [100] * 8,
-        "Barra": [100] * 8  # Questa colonna sarà usata per la visualizzazione
+        "Fattore": ["👤 Popolazione", "🔫 Munizioni", "🥫 Cibo", "💰 Finanze","🚑 Ospedali","🎒 Scuole","🔋 Centrali Elettriche","⛪ Luoghi di Culto","🫂 Solidarietà"],
+        "Valore": [100] * 9,
+        "Barra": [100] * 9  # Questa colonna sarà usata per la visualizzazione
     }
     
     # Inizializza lo stato per la Squadra 1 se non esiste
